@@ -69,6 +69,10 @@ gsap.from(".animate-card", {
 });
 
 gsap.from(".logo-box-animate", {
+  scrollTrigger: {
+    trigger: "logo-box-animate",
+    toggleActions: "restart none none none"
+},
   duration: 2,
   scale: 0.5, 
   opacity: 0, 
